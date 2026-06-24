@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { getSavedUser, clearAuth } from '../../lib/api';
 
-const API = process.env.NEXT_PUBLIC_API_URL ; //|| 'http://localhost:5000/api';
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
 
 // ─── Level Badge ──────────────────────────────────────────────────────────────
 function LevelBadge({ level }) {
